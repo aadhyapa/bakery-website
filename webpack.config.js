@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'development',
@@ -13,6 +14,16 @@ module.exports = {
   },
  module: {
    rules: [
+    {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env'],
+        },
+      },
+    },
      {
        test: /\.css$/i,
        use: ['style-loader', 'css-loader'],
