@@ -18483,7 +18483,7 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "5fa272ba2beb1b7dca96.png";
+module.exports = __webpack_require__.p + "assets/images/bakery2.png";
 
 /***/ }),
 
@@ -18494,7 +18494,7 @@ module.exports = __webpack_require__.p + "5fa272ba2beb1b7dca96.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "e9cf29ebabdefda7b782.jpg";
+module.exports = __webpack_require__.p + "assets/images/bg10.jpg";
 
 /***/ }),
 
@@ -18505,7 +18505,7 @@ module.exports = __webpack_require__.p + "e9cf29ebabdefda7b782.jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "5feb87e3270b6cff3640.png";
+module.exports = __webpack_require__.p + "assets/images/bg11.png";
 
 /***/ }),
 
@@ -18516,7 +18516,7 @@ module.exports = __webpack_require__.p + "5feb87e3270b6cff3640.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "655d578b00827341c20c.png";
+module.exports = __webpack_require__.p + "assets/images/bg12.png";
 
 /***/ }),
 
@@ -18527,7 +18527,7 @@ module.exports = __webpack_require__.p + "655d578b00827341c20c.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "35b0f0dfa66fe9b5c9e8.png";
+module.exports = __webpack_require__.p + "assets/images/bg13.png";
 
 /***/ })
 
