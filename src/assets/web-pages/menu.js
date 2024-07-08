@@ -6,7 +6,7 @@ import bg13 from '../images/menu-page/bg13.png';
 export function menuPage() {
     // Create a new div element
     const mainContent = document.getElementById('container');
-
+    
 
     mainContent.innerHTML = '';
     document.body.style.backgroundImage = `url(${bg13})`;
@@ -19,10 +19,61 @@ export function menuPage() {
       <p>Explore our wide variety of baked goods, from scrumptious cakes to delightful pastries. 
         Find your favorite treat and get inspired to try something new!
         </p>
-    </div>
-    <button>View Menu ⇩</button>
+    </div>  
     `;
-  
+
+    const scrollButton = document.createElement('button');
+    scrollButton.classList.add('scroll-button');
+    scrollButton.textContent = 'View Menu ⇩';
+    menu.appendChild(scrollButton);
+
+    scrollButton.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[0].scrollIntoView();})
+
+
+    const menuButton = document.createElement('button');
+    menuButton.classList.add('menu-button');
+    menuButton.textContent = '🀆Menu';
+    mainContent.appendChild(menuButton);
+    
+
+    const menuDialog = document.createElement('dialog');
+    menuDialog.classList.add('menu-dialog');
+    menuDialog.innerHTML = `
+    <button class = "dialogCakes">Cakes</button>
+    <button class = "dialogCupcakes">Cupcakes</button>
+    <button class = "dialogCookies">Cookies</button>
+    <button class = "dialogMuffins">Muffins</button>
+    <button class = "dialogCheesecakes">Cheesecakes</button>
+    <button class = "dialogPastries">Pastries</div>
+    `;
+    mainContent.appendChild(menuDialog);
+    menuButton.addEventListener('click', () => Dialog());
+
+    const Dialog = () => {
+      
+      menuDialog.showModal();
+
+      const dialogCakes = document.querySelector('.dialogCakes');
+      const dialogCupcakes = document.querySelector('.dialogCupcakes');
+      const dialogCookies = document.querySelector('.dialogCookies');
+      const dialogMuffins = document.querySelector('.dialogMuffins');
+      const dialogCheesecakes = document.querySelector('.dialogCheesecakes');
+      const dialogPastries = document.querySelector('.dialogPastries');
+
+      dialogCakes.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[0].scrollIntoView(); menuDialog.close();})
+      dialogCupcakes.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[1].scrollIntoView(); menuDialog.close();})
+      dialogCookies.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[2].scrollIntoView(); menuDialog.close();})
+      dialogMuffins.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[3].scrollIntoView(); menuDialog.close();})
+      dialogCheesecakes.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[4].scrollIntoView(); menuDialog.close();})
+      dialogPastries.addEventListener('click', () => {document.getElementsByClassName('menuCategory')[5].scrollIntoView(); menuDialog.close();})
+    }
+
+    menuDialog.addEventListener('click', (event) => {
+      if (event.target.class !== 'menuDialog') {
+        menuDialog.close();
+      }
+    })
+
     const menuItems = [];
 
     class addMenuItems{
