@@ -1,9 +1,17 @@
 import bakery2 from '../images/home-page/bakery2.png';
+import bg10 from '../images/home-page/bg10.jpg';
 
 export function homePage() {
-    const mainContent = document.getElementById('container');
 
+
+    const mainContent = document.getElementById('container');
     mainContent.innerHTML = ''; 
+    document.body.style.backgroundColor = 'transparent';
+    document.body.style.backgroundImage = `url(${bg10})`;
+    
+;
+
+
     const home = document.createElement('div');
     home.classList.add('home');
 
