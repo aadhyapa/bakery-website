@@ -3,9 +3,11 @@ import './style.css';
 
 import { homePage } from './assets/web-pages/home';
 import { menuPage } from './assets/web-pages/menu';
+import { contactPage } from './assets/web-pages/contact';
 
 const homeButton = document.getElementById('home');
 const menuButton = document.getElementById('menu');
+const contactButton = document.getElementById('contact');
 
 function resetPage() {
     const mainContent = document.getElementById('container');
@@ -40,5 +42,11 @@ menuButton.addEventListener('click', () =>{
     resetNavButton(); 
     menuPage();
     setButtonActive(menuButton);
+});
+contactButton.addEventListener('click', () =>{
+    resetPage(); 
+    resetNavButton(); 
+    contactPage();
+    setButtonActive(contactButton);
 });
 

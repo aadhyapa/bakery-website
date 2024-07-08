@@ -8,6 +8,7 @@ export function homePage() {
     mainContent.innerHTML = ''; 
     document.body.style.backgroundColor = 'transparent';
     document.body.style.backgroundImage = `url(${bg10})`;
+    
 ;
 
 
