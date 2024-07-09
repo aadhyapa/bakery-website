@@ -11,6 +11,7 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'docs'),
     clean: true,
+    publicPath: '/',
   },
  module: {
    rules: [
@@ -44,6 +45,8 @@ module.exports = {
  devtool: 'inline-source-map',
  devServer: {
   static: './docs',
+  open: true,  // Automatically open the browser
+    hot: true,    // Enable hot module replacement
 },
  plugins: [
    new HtmlWebpackPlugin({
