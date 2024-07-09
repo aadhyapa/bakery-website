@@ -1,0 +1,440 @@
+
+:root{
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --theme-red: #4d0000;
+  --lilac: #d4a5d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+#container {
+  flex: 1;
+  position: relative;
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.footer {
+  color: white;
+  background-color: var(--theme-red);
+  text-align: center;
+  padding: 1.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position:relative; 
+  bottom: 0; 
+  left: 0; 
+  z-index: 10;
+}
+
+
+nav{
+  height: 15vh;
+  /*background-color: var(--theme-green);*/
+  padding: 2.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1{
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Lobster', cursive;
+}
+
+nav > div{
+  display: flex;
+  gap: 2vh;
+}
+
+nav button{
+  
+  color: white;
+  padding: 1vh 2vh;
+  background: none;
+  border: none;
+  height:auto;
+  border-radius: 7px;
+  margin: 0;
+  display: inline;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav button:hover{
+  opacity: 1;
+  font-size: 2rem;
+}
+
+nav button:active{
+  font-size: 1.5rem;
+}
+
+/* Home Page */
+.home{
+  color: white;
+  width: 50%;
+  height: clamp(200px,85vh,100vh);
+  padding:0vh 0vh 0vh 5vh;
+  text-wrap: wrap;
+}
+.home h1{
+  font-size: 6.7rem;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 5px 10px;
+}
+
+.home p{
+  font-size: 1.5rem;
+  color: white;
+  line-height: 3rem;
+  padding: 2vh;
+  text-align: justify;
+
+}
+
+.why-us{
+  color: white;
+  padding: 5vh;
+  background-color: rgb(32, 0, 4);
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.why-us p{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+
+}
+
+.why-us h1{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-family: cursive;
+}
+
+.why-us-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  line-height: 2rem;
+  justify-content: center;
+}
+
+.why-us-content p{
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.why-us-content h3{
+  font-size: 1.7rem;
+  text-align: center  ;
+}
+
+.why-us-content > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7vh;
+}
+
+.testimonial-part{
+  width: 100%;
+  height: auto;
+  background-color:rgb(0, 0, 0);
+  padding: 5vh;
+  color: white;
+  justify-content: center;
+}
+
+.below{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+.testimonial-part h1{
+  font-size: 3rem;
+  text-align: center;
+  font-family: cursive;
+}
+
+.testimonial-part p{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  line-height: 5rem;
+}
+
+.testimonial-part button{
+  color: white;
+  padding: 1vh 2vh;
+  background: none;
+  border: none;
+  height:auto;
+  border-radius: 7px;
+  margin: 0;
+  display: inline;
+  font-size: 2rem;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.testimonial-part button:hover{
+  font-size: 3rem;
+}
+.quote{
+  font-size: 10rem;
+}
+
+.testContent{
+  font-size: 2rem;
+}
+
+.name{
+  font-size: 1.5rem;
+
+}
+/* Menu Page */
+
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  padding: 3vh;
+  padding-top: 1vh;
+}
+
+.menu h1{
+  font-size: 3rem;
+  text-align: center;
+  font-family: cursive;
+}
+
+.menu p{
+  line-height: 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.menu button{
+  color: white;
+  padding: 2vh 2vh;
+  background-color:#4d0000;
+  border: 1px solid white;
+  height:auto;
+  width: auto;
+  border-radius: 30px;
+  margin: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+  box-shadow:rgba(0, 0, 0, 0.5) 10px 20px 30px;
+}
+
+.menu button:hover{
+  font-size: 1.8rem;
+}
+
+.menuCategory{
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  color:rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5vh;
+  padding: 5vh;
+
+}
+
+.title{
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: cursive;
+}
+
+
+.menu-item{
+  border: 1px solid white;
+  padding: 2vh; 
+}
+
+.menuItem img{
+  height: 60%;
+  object-fit: cover;
+}
+
+.menu-button{
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  height: 10vh;
+  width: 10vh;
+  position: fixed;
+  justify-self: center;
+  bottom: 3vh;
+  right: 3vh;
+  border-radius: 50%; 
+  background-color: #4d0000;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  box-shadow:rgba(0, 0, 0, 0.5) 1px 5px 10px;
+  cursor: pointer;
+}
+
+.menu-button:hover{
+  height: 11vh;
+  width: 11vh;
+  font-size: 1.2rem;
+}
+
+dialog{
+  margin: 3vh;
+  padding: 1.5vh;
+  background-color:#4d0000;
+  color:rgb(255, 255, 255);
+  border: 1px solid white;
+  border-radius: 20px;
+  align-self:last baseline;
+  justify-content: center;  
+  justify-self:last baseline;
+  align-content: space-between;
+  position: fixed;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+dialog button{
+  color: white;
+  padding: 2vh 2vh;
+  background: none;
+  border: none;
+  height:auto;
+  text-align: left;
+  border-radius: 30px;
+  margin: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+}
+
+dialog button:hover{
+  font-size: 1.5rem;
+  box-shadow:rgba(0, 0, 0, 0.5) 1px 5px 10px;
+}
+
+/* Contact Page */
+
+.contact {
+  text-align: center;
+  color: white;
+  padding: 5vh;
+  height: 80vh;
+}
+
+
+.contact h1{
+  line-height: 7rem;
+  font-size: 3rem;
+  font-family: cursive;
+}
+
+.contact-container {
+  display: flex;
+  gap: 1px solid white;
+  margin: 0 auto;
+  height: auto;
+  align-self: center;
+
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  height: auto;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border: 1px solid rgb(255, 255, 255);
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  background-color: rgba(32, 0, 0, 0.5);  /* Semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;  /* Optional: rounded corners */
+  color: white;
+  text-align: left;  /* Align text to the left */
+  flex: 1;  /* Flex-grow property for responsive design */
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #000000;
+  color: rgb(255, 252, 252);
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  font-size: 1.2rem;
+}
